@@ -1,0 +1,23 @@
+package com.tnsif.springiocdi;
+
+import java.util.List;
+
+public class Library {
+	
+	  private List<Book> books;
+
+	    // Constructor for dependency injection, initializes the list of books
+	    public Library(List<Book> books) {
+	        this.books = books;
+	    }
+
+	    // Method to display details of all books in the library
+	    public void displayBooks() {
+	        System.out.println("Books in the Library:");
+	        // Iterate through the list of books and print each book's details
+	        for (Book book : books) {
+	            System.out.println(book);
+	        }
+	    }
+
+}
